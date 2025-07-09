@@ -7,6 +7,6 @@ public class GreetDemo implements GreetInterface {
 		System.out.println("Good morning ----");
 		
 	}
-{
+
 
 }
