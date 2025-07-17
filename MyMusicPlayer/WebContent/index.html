@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Music Player</title>
+    <link rel="stylesheet" href="css/style.css"> </head>
+<body>
+    <div class="music-player-container">
+        <div class="song-info">
+            <img id="album-art" src="images/default_album.png" alt="Album Art">
+            <h2 id="song-title">Song Title</h2>
+            <p id="song-artist">Artist Name</p>
+        </div>
+
+        <div class="controls">
+            <button id="prev-btn">Previous</button>
+            <button id="play-pause-btn">Play</button>
+            <button id="next-btn">Next</button>
+            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+            <input type="range" id="seek-slider" min="0" max="100" value="0">
+            <div class="time-display">
+                <span id="current-time">0:00</span> / <span id="total-duration">0:00</span>
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search song...">
+            <button id="search-button">Search</button>
+            <button id="voice-search-button">🎤 Voice Search</button>
+        </div>
+
+        <div class="playlist-section">
+            <h3>Playlist</h3>
+            <ul id="playlist">
+                </ul>
+        </div>
+
+        <div class="extra-sections">
+            <div class="recently-played-section">
+                <h3>Recently Played</h3>
+                <ul id="recently-played-list"></ul>
+            </div>
+            <div class="favorites-section">
+                <h3>Favorites</h3>
+                <ul id="favorites-list"></ul>
+            </div>
+        </div>
+
+        <div id="now-playing-section">
+            <h3>Now Playing</h3>
+            <p id="now-playing-details"></p>
+        </div>
+
+        <div id="visitor-counter">
+            Visitors: <span id="counter-value">0</span>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script> </body>
+</html>
